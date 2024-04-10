@@ -22,7 +22,6 @@ console.log('Hello Name:', helloName('Kalia'));
 console.log('Hello Name:', helloName('Jack and Jill'));
 
 // 3. Function to add two numbers together & return the result
-
 function addNumbers(numbersInput) {
   let total = 0;
   for(let number of numbersInput){
@@ -32,13 +31,17 @@ function addNumbers(numbersInput) {
   return total;
 }
 
-console.log('sum:', addNumbers([6,10]));
+console.log('sum of two numbers:', addNumbers([16,20]));
 
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree() {
+function multiplyThree(x, y, z) {
+  console.log(x * y * z);
+  return  (x * y * z);
 
 }
+let result = multiplyThree( 7, 8, 9);
+console.log( 'result', result);
 
 
 // 5. Function that will return true if a number is positive, 
