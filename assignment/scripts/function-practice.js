@@ -63,9 +63,16 @@ console.log('-16 is positive:', isPositive(-16));
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
-function getLast(array) {
 
+function getLast(array) {
+  if(){
+  return (array.length - 1);
+} else if(){
+  return undefined;
 }
+}
+getLast();
+console.log ('last item in array:', getLast([26,32,7,9,21]));
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
