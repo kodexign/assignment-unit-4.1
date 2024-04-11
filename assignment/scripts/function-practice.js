@@ -22,39 +22,42 @@ console.log('Hello Name:', helloName('Kalia'));
 console.log('Hello Name:', helloName('Jack and Jill'));
 
 // 3. Function to add two numbers together & return the result
-function addNumbers(numbersInput) {
-  let total = 0;
-  for(let number of numbersInput){
-    total += number;
-  }
+function addNumbers( firstNumber, secondNumber){
   // return firstNumber + secondNumber;
-  return total;
+  return firstNumber + secondNumber;
 }
 
-console.log('sum of two numbers:', addNumbers([16,20]));
+console.log( "add two numbers:", addNumbers(3, 8));
+
+
 
 
 // 4. Function to multiply three numbers & return the result
+
 function multiplyThree(x, y, z) {
   console.log(x * y * z);
-  return  (x * y * z);
-
+  return (x * y * z);
 }
-let result = multiplyThree( 7, 8, 9);
-console.log( 'result', result);
+let result = multiplyThree(2, 4, 7);
+
+console.log('result', result);
+
+;
 
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
 function isPositive(number) {
   if (number > 0) {
-    return;
-  }
-  return;
+    return true;
+  }else{
+  return false;
+}
 }
 // Call the function to test each outcome (true & false) 
+isPositive(3);
 // Write a separate console.log statement for each outcome
-
+console.log('number is positive:', isPositive());
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
@@ -98,6 +101,18 @@ function allPositive() {
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
+
+//function addNumbers(numberInput) {
+//  let total = 0;
+ // for (let number of numberInput) {
+ //   total += number;
+ // }
+  // return firstNumber + secondNumber;
+ // return total;
+//}
+
+//console.log('sum of two numbers:', addNumbers([12, 10]));
+//console.log('sum of two numbers:', addNumbers([35, 54]));
 
 
 // DO NOT MODIFY
