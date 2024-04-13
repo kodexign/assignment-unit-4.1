@@ -22,23 +22,25 @@ console.log('Hello Name:', helloName('Kalia'));
 console.log('Hello Name:', helloName('Jack and Jill'));
 
 // 3. Function to add two numbers together & return the result
-console.log('add two numbers');
+console.log('add two numbers---');
+
 function addNumbers( firstNumber, secondNumber){
   console.log('add numbers:', [firstNumber, secondNumber]);
- 
   // return firstNumber + secondNumber;
-  console.log( 'add results:', firstNumber+secondNumber)
-  return firstNumber + secondNumber;
-  
+  let result = firstNumber + secondNumber;
+  console.log('sum:', result); 
+  return result;
 }
+// with how the function is written, will console log will all thats in code
 addNumbers(7,3);
 addNumbers(845,18);
 
-console.log('console log function test:', addNumbers(25,11));
+//console logs will only show sum
+console.log('console log addNumber function test:', addNumbers(25,11)); 
 
 
 // 4. Function to multiply three numbers & return the result
-console.log('multiple three numbers:');
+console.log('multiple three numbers---');
 
 function multiplyThree(x, y, z) {
   console.log('multipy:', [x,y,z]);
@@ -52,7 +54,7 @@ console.log('result:', multiplyThree(17,24,35));
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
-console.log('Test for Positive');
+console.log('Test for Positive---');
 function isPositive(number) {
   console.log('number input is:', number);
   if (number > 0) {
@@ -72,21 +74,24 @@ console.log('is positive:', isPositive(-16));
 //    array is empty, return `undefined`.
 console.log('return last item---');
 function getLast(arrayInput) {
+  if (arrayInput) { 
   console.log('array input:', arrayInput);
-  if (!arrayInput) { 
-  return undefined;
-} else {
   return arrayInput[arrayInput.length - 1];
 }
+  return undefined;
+ 
 }
 console.log ('last item in array:', getLast([26,32,7,9,21]));
 console.log ('last item in array:', getLast());
+console.log ('last item in array:', getLast([2,4,6,8]));
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 //function find(value, array) {
-  //for( let value of array)
+  //for( let value of array){
+
+  //}
 
 //}
 
