@@ -64,22 +64,23 @@ console.log('-16 is positive:', isPositive(-16));
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
 
-function getLast(array) {
-  if(){
-  return (array.length - 1);
-} else if(){
-  return undefined;
+function getLast(arrayInput) {
+  if (arrayInput.length +=[]) {
+    return undefined;
+  } 
+ return arrayInput[arrayInput.length - 1];
 }
-}
+
 getLast();
 console.log ('last item in array:', getLast([26,32,7,9,21]));
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
-function find(value, array) {
+//function find(value, array) {
+  //for( let value of array)
 
-}
+//}
 
 // ----------------------
 // Stretch Goals
@@ -102,9 +103,16 @@ function sumAll(array) {
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
-function allPositive() {
-
+function allPositive(arrayInput) {
+  let positiveNumbers =[];
+  for (let num of arrayInput) {
+    if(num >0) {
+      positiveNumbers.push(num);
+    }
+  }
+  return positiveNumbers;
 }
+
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
