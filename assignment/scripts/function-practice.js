@@ -22,32 +22,39 @@ console.log('Hello Name:', helloName('Kalia'));
 console.log('Hello Name:', helloName('Jack and Jill'));
 
 // 3. Function to add two numbers together & return the result
+console.log('add two numbers');
 function addNumbers( firstNumber, secondNumber){
+  console.log('add numbers:', [firstNumber, secondNumber]);
+ 
   // return firstNumber + secondNumber;
+  console.log( 'add results:', firstNumber+secondNumber)
   return firstNumber + secondNumber;
+  
 }
+addNumbers(7,3);
+addNumbers(845,18);
 
-console.log( "add two numbers:", addNumbers(3, 8));
-
-
+console.log('console log function test:', addNumbers(25,11));
 
 
 // 4. Function to multiply three numbers & return the result
+console.log('multiple three numbers:');
 
 function multiplyThree(x, y, z) {
-  console.log(x * y * z);
-  return (x * y * z);
+  console.log('multipy:', [x,y,z]);
+  return x * y * z;
+ 
 }
-let result = multiplyThree(2, 4, 7);
+console.log('result:', multiplyThree(1,2,3));
+console.log('result:', multiplyThree(17,24,35));
 
-console.log('result', result);
-
-;
 
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
+console.log('Test for Positive');
 function isPositive(number) {
+  console.log('number input is:', number);
   if (number > 0) {
     return true;
   }else{
@@ -55,24 +62,25 @@ function isPositive(number) {
 }
 }
 // Call the function to test each outcome (true & false) 
-isPositive();
-
+isPositive(45);
+isPositive(-1);
 // Write a separate console.log statement for each outcome
-console.log('42 is positive:', isPositive(42));
-console.log('-16 is positive:', isPositive(-16));
+console.log('is positive:', isPositive(42));
+console.log('is positive:', isPositive(-16));
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
-
+console.log('return last item---');
 function getLast(arrayInput) {
-  if (arrayInput.length +=[]) {
-    return undefined;
-  } 
- return arrayInput[arrayInput.length - 1];
+  console.log('array input:', arrayInput);
+  if (!arrayInput) { 
+  return undefined;
+} else {
+  return arrayInput[arrayInput.length - 1];
 }
-
-getLast();
+}
 console.log ('last item in array:', getLast([26,32,7,9,21]));
+console.log ('last item in array:', getLast());
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
