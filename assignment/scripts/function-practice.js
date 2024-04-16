@@ -14,7 +14,7 @@ console.log('Test - should say "Hello World!"', hello());
 
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
-console.log( '---PERSONALIZED HELLO---');
+console.log('---PERSONALIZED HELLO---');
 function helloName(name) {
   return 'Hello, ' + name + '!';
 }
@@ -86,19 +86,19 @@ console.log('last item in array:', getLast([2, 4, 6, 8]));
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 console.log('---FIND A VALUE---');
 
-function find(array, value) {
+function findValue(array, value) {
   for (let i = 0; i < array.length; i++) {
     if (array[i] === value) {
-     console.log('array:', array, 'search:', value); 
+      console.log('array:', array, 'search:', value);
       return true;
     }
   }
-  console.log('array:', array, 'search:', value); 
+  console.log('array:', array, 'search:', value);
   return false;
 
 }
-console.log('found:',find([2, 4, 6, 8], 2));
-console.log('found:', find([15,7,3,25], 8));
+console.log('found:', findValue([2, 4, 6, 8], 2));
+console.log('found:', findValue([15, 7, 3, 25], 8));
 
 // ----------------------
 // Stretch Goals
@@ -117,9 +117,9 @@ function isFirstLetter(letter, string) {
   return false;
 
 }
-console.log('letter is first:', isFirstLetter('b','bear'));
-console.log('letter is first:', isFirstLetter('b','cat'));
-console.log('letter is first:', isFirstLetter('t','the cat in the hat'));
+console.log('letter is first:', isFirstLetter('b', 'bear'));
+console.log('letter is first:', isFirstLetter('b', 'cat'));
+console.log('letter is first:', isFirstLetter('t', 'the cat in the hat'));
 
 
 // 9. Function to return the sum of all numbers in an array
@@ -127,15 +127,15 @@ console.log('---SUM OF ARRAY---');
 function sumAll(array) {
   let total = 0;
   // TODO: loop to add items
-  for( let i = 0; i < array.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     total += array[i];
-}
+  }
   // TODO: return the sum
- console.log('array:', array);
+  console.log('array:', array);
   return total;
 }
-console.log( 'sum of array:', sumAll([2,4,6,8]));
-console.log( 'sum of array:', sumAll([32,18,26,25]));
+console.log('sum of array:', sumAll([2, 4, 6, 8]));
+console.log('sum of array:', sumAll([32, 18, 26, 25]));
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
@@ -145,7 +145,7 @@ function allPositive(arrInput) {
   let positiveNumbers = [];
   for (let num of arrInput) {
     if (num > 0) {
-      
+
       positiveNumbers.push(num);
     }
   }
@@ -153,7 +153,7 @@ function allPositive(arrInput) {
   return positiveNumbers;
 }
 
-console.log( 'array is positive:', allPositive( [2,4,6,-1]));
+console.log('array is positive:', allPositive([2, 4, 6, -1]));
 
 
 
