@@ -86,19 +86,19 @@ console.log('last item in array:', getLast([2, 4, 6, 8]));
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 console.log('---FIND A VALUE---');
 
-function findValue(array, value) {
+function find(value, array) {
   for (let i = 0; i < array.length; i++) {
     if (array[i] === value) {
-      console.log('array:', array, 'search:', value);
+      console.log('search:', value, 'array:', array, );
       return true;
     }
   }
-  console.log('array:', array, 'search:', value);
+  console.log('search:', value, 'array:', array, );
   return false;
 
 }
-console.log('found:', findValue([2, 4, 6, 8], 2));
-console.log('found:', findValue([15, 7, 3, 25], 8));
+console.log('found:', find(2, [2, 4, 6, 8]));
+console.log('found:', find(2, [15, 7, 3, 25]));
 
 // ----------------------
 // Stretch Goals
