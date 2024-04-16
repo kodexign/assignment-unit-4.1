@@ -29,15 +29,10 @@ function addNumbers(firstNumber, secondNumber) {
   console.log('add numbers:', [firstNumber, secondNumber]);
   // return firstNumber + secondNumber;
   let result = firstNumber + secondNumber;
-  console.log('sum:', result);
   return result;
 }
-// with how the function is written, will console log will all thats in code
-addNumbers(7, 3);
-addNumbers(845, 18);
-
-//console logs will only show sum
-console.log('console log addNumber function test:', addNumbers(25, 11));
+//or console.log it
+console.log('sum', addNumbers(25, 11));
 
 
 // 4. Function to multiply three numbers & return the result
@@ -91,32 +86,34 @@ console.log('last item in array:', getLast([2, 4, 6, 8]));
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 console.log('---FIND A VALUE---');
 
-function findValue(array, value) {
+function find(array, value) {
   for (let i = 0; i < array.length; i++) {
-    console.log('array:', array, 'find:', value);
     if (array[i] === value) {
+     console.log('array:', array, 'search:', value); 
       return true;
     }
   }
+  console.log('array:', array, 'search:', value); 
   return false;
 
 }
-console.log('found:',findValue([2, 4, 6, 8], 2));
-console.log('found:', findValue([15,7,3,25], 8));
+console.log('found:',find([2, 4, 6, 8], 2));
+console.log('found:', find([15,7,3,25], 8));
 
 // ----------------------
 // Stretch Goals
 // ----------------------
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
-console.log('---STRETCH GOAL- FIRST LETTER---')
+console.log('---STRETCH GOAL- FIRST LETTER---');
 function isFirstLetter(letter, string) {
   for (let i = 0; i < string.length; i++) {
-    console.log('string:', string, 'find:', letter);
     if (letter === string[0]) {
+      console.log('string:', string, 'find:', letter);
       return true;
     }
   }
+  console.log('string:', string, 'find:', letter);
   return false;
 
 }
@@ -131,29 +128,32 @@ function sumAll(array) {
   let total = 0;
   // TODO: loop to add items
   for( let i = 0; i < array.length; i++) {
-    console.log('array:', array);
-    total + array(array.length);
+    total += array[i];
 }
   // TODO: return the sum
- return total
+ console.log('array:', array);
+  return total;
 }
-console.log( 'sum of array:', sumAll(2,4,6,8));
+console.log( 'sum of array:', sumAll([2,4,6,8]));
+console.log( 'sum of array:', sumAll([32,18,26,25]));
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
-console.log(' ---ALL POSITIVE---')
-function allPositive(arrayInput) {
+console.log(' ---ALL POSITIVE---');
+function allPositive(arrInput) {
   let positiveNumbers = [];
-  for (let num of arrayInput) {
+  for (let num of arrInput) {
     if (num > 0) {
+      
       positiveNumbers.push(num);
     }
   }
+  console.log('original array:', arrInput);
   return positiveNumbers;
 }
 
-console.log( 'array is positive:', allPositive( 2,4,6,-1));
+console.log( 'array is positive:', allPositive( [2,4,6,-1]));
 
 
 
@@ -161,17 +161,7 @@ console.log( 'array is positive:', allPositive( 2,4,6,-1));
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
 
-//function addNumbers(numberInput) {
-//  let total = 0;
-// for (let number of numberInput) {
-//   total += number;
-// }
-// return firstNumber + secondNumber;
-// return total;
-//}
 
-//console.log('sum of two numbers:', addNumbers([12, 10]));
-//console.log('sum of two numbers:', addNumbers([35, 54]));
 
 
 // DO NOT MODIFY
